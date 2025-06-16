@@ -1,0 +1,36 @@
+/* Definição das variáveis de cor do tema Docker */
+:root {
+  --docker-blue: #2496ed;
+  --docker-dark-bg: #0d141d;
+  --docker-light-bg: #f5f8fa;
+  --docker-text-primary: #333333;
+  --docker-text-secondary: #585858;
+  --docker-border-color: #e0e0e0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Outfit:wght@100..900&display=swap');
+
+* {
+  font-family: Outfit, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Alterado para usar a cor de fundo clara do tema */
+#root {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--docker-light-bg);
+  animation: fadeInAnim 1.9s;
+}
+
+/* Animação de fade-in global */
+@keyframes fadeInAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
